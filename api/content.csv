@@ -1,0 +1,51 @@
+priority,word,phrase_tag,context,form_translation,context_translation
+1,time,NN,time,Zeit,Zeit
+2,name,NN,name,Name,Name
+3,day,NN,day,Tag,Tag
+4,life,NN,life,Leben,Leben
+5,world,NN,world,Welt,Welt
+6,place,NN,place,"Platz, Ort, Stelle",Ort
+7,home,NN,Where are you? – I am at home.,"Heim, Haus, Zuhause",Wo bist du? – Ich bin zuhause.
+8,year,NN,year,Jahr,Jahr
+9,man,NN,a man,Mann,ein Mann
+10,night,NN,night,Nacht,Nacht
+11,car,NN,car,Auto,Auto
+12,school,NN,school,Schule,Schule
+13,number,NN,number,"Nummer, Zahl",Nummer
+14,thing,NN,What is this thing?,"Ding, Sache",Was ist das für ein Ding?
+15,the,DT,the world,"der, die, das",die Welt
+16,end,NN,the end,"Ende, Schluss",das Ende
+17,money,NN,money,Geld,Geld
+18,business,NN,business,"Business, Geschäft",Business
+19,part,NN,part,das Teil,Teil
+20,a,DT,a year,"ein, eine",ein Jahr
+21,today,NN,today,heute,heute
+22,family,NN,a family,die Familie,eine Familie
+23,father,NN,a father,der Vater,ein Vater
+24,an,DT,an apple,"ein, eine",ein Apfel
+25,email,NN,an email,E-Mail,eine E-Mail
+26,I,PP,I work.,ich,Ich arbeite.
+27,know,VV,I know.,wissen,Ich weiß.
+28,see,VV,I see a car.,sehen,Ich sehe ein Auto.
+29,room,NN,a room,"Raum, Zimmer",ein Raum
+30,job,NN,He needs a job.,"Job, Arbeit",Er braucht einen Job.
+31,water,NN,water,Wasser,Wasser
+32,you,PP,You know.,"du, Sie",Du weißt.
+33,work,VV,Where do you work? – In a bank.,arbeiten,Wo arbeiten Sie? – In einer Bank.
+34,love,VV,I love you.,lieben,Ich liebe dich.
+35,need,VV,They need your room.,"brauchen, benötigen",Sie brauchen dein Zimmer.
+36,problem,NN,a problem,Problem,ein Problem
+37,girl,NN,a girl,Mädchen,ein Mädchen
+38,son,NN,a son,Sohn,ein Sohn
+39,he,PP,He works at the school.,er,Er arbeitet in der Schule.
+40,needs,VVZ,I need a job. He needs a job too.,"braucht, benötigt",I brauche einen Job. Er braucht auch einen Job.
+41,she,PP,She sees a man.,sie,Sie sieht einen Mann.
+42,says,VVZ,He says he needs a job.,sagt,Er sagt er braucht einen Job.
+43,it,PP,It works.,es,Es funktioniert.
+44,works,VVZ,He works at home.,arbeitet,Er arbeitet zuhause.
+45,mother,NN,a mother,Mutter,eine Mutter
+46,book,NN,a book,Buch,ein Buch
+47,week,NN,a week,Woche,eine Woche
+48,friend,NN,He needs a friend.,Freund(in),Er braucht einen Freund.
+49,boy,NN,She sees a boy.,Junge,Sie sieht einen Jungen.
+50,baby,NN,I love my baby.,"Baby, Säugling",Ich liebe mein Baby.
