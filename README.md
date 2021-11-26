@@ -35,8 +35,5 @@ In the **client** folder:
     npm start
     ```
 The answers are stored in the 'answers' table in the database.
-<<<<<<< HEAD
 
 ![Language App](/language_app.jpg?raw=true)
-=======
->>>>>>> 041d562ea7e0b6884c09fbda6e7b9bf990f7b17d
