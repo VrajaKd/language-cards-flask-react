@@ -2,6 +2,8 @@
 
 Technologies and libraries used: SQLAlchemy, MySQL, Flask, React
 
+![Language App](/language_app.jpg?raw=true)
+
 ## How to set up
 
 **Preparation**
@@ -35,5 +37,3 @@ In the **client** folder:
     npm start
     ```
 The answers are stored in the 'answers' table in the database.
-
-![Language App](/language_app.jpg?raw=true)
