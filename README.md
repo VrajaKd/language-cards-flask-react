@@ -19,7 +19,7 @@ https://packaging.python.org/guides/installing-using-pip-and-virtual-environment
 - Configure the MySQL database in an .env.dev file
 - Start Flask in the api folder
     ```
-    python router.py
+    python routes.py
     ```
 - Start React in the client folder
     ```
