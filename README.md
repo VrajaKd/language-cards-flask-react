@@ -12,17 +12,28 @@ Technologies and libraries used: SQLAlchemy, MySQL, Flask, React
 Instructions:
 https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
 
-- Install the packages in the api folder
+- Rename .env.dev to .env
+- Configure the MySQL database in an .env file
+
+In the **api** folder:
+- Install the packages
     ```
     pip install -r requirements.txt
     ```
-- Configure the MySQL database in an .env.dev file
-- Start Flask in the api folder
+
+- Start Flask
     ```
     python router.py
+    ```
+In the **client** folder:
+- Install needed NPM packages
+    ```
+    npm install
     ```
 - Start React in the client folder
     ```
     npm start
     ```
 The answers are stored in the 'answers' table in the database.
+
+![Language App](/language_app.jpg?raw=true)
