@@ -79,6 +79,10 @@ function Guess() {
         const context_translation = data.context_translation;
         setContextTranslation(context_translation);
 
+      })
+      .catch((error) => {
+        console.log(error);
+        alert('Database not connected.')
       });
   }
 
@@ -127,7 +131,7 @@ function Guess() {
 
           }, 2000);
 
-      //  Handle wrong answers
+        //  Handle wrong answers
       } else if ((input !== String(loadedWord) && String(loadedWord)) || (event !== 'firstLoad' && !input)) {
         setMsgColor({color: "#cc5858"});
         setCorrect('Try again!');
@@ -137,7 +141,7 @@ function Guess() {
           'http://localhost:5000/api/guess',
           {
             method: 'POST',
-            body: JSON.stringify({priority_no: cardNo, word:loadedWord, answer: input}),
+            body: JSON.stringify({priority_no: cardNo, word: loadedWord, answer: input}),
             headers: {
               'Content-Type': 'application/json',
             },
