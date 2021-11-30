@@ -68,7 +68,7 @@ def add_card():
         card = change_phrase_tags(card)
 
         return jsonify(card)
-    return redirect("http://localhost:3000/", code=302)
+    return ''
 
 
 if __name__ == "__main__":
