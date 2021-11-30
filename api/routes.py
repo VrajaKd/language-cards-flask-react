@@ -1,4 +1,4 @@
-from flask import jsonify, request
+from flask import jsonify, request, redirect
 from app import create_app, db
 from funcs.change_phrase_tags import change_phrase_tags
 from models import Cards, card_schema, Answers
@@ -11,7 +11,7 @@ load_dotenv()
 app = create_app()
 
 
-@app.before_request
+@app.before_first_request
 def before_request_func():
     # Create databases
     db.create_all()
@@ -43,13 +43,21 @@ def add_card():
     answer = ''
     word = ''
 
-    # Get dat from client
+    # Get data from client
     try:
         priority = request.json['priority_no']
         answer = request.json['answer']
         word = request.json['word']
-    except:
-        pass
+    except Exception as e:
+        print(f'Get data from client error: {e}')
+
+    if answer:
+        # Save answers
+        answers = Answers(word=word, answer=answer)
+
+        if word:
+            db.session.add(answers)
+            db.session.commit()
 
     if priority:
         # Get cards from database
@@ -59,15 +67,8 @@ def add_card():
         # Change phrase tags
         card = change_phrase_tags(card)
 
-        # Save answers
-        answers = Answers(word=word, answer=answer)
-
-        if word:
-            db.session.add(answers)
-            db.session.commit()
-
         return jsonify(card)
-    return ''
+    return redirect("http://localhost:3000/", code=302)
 
 
 if __name__ == "__main__":
