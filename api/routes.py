@@ -56,7 +56,7 @@ def add_card():
 
     if answer:
         # Save answers
-        if answer == 'empty_input':
+        if answer == 'empty_input': # Handle blank answers
             answer = ''
         answers = Answers(word=word, answer=answer)
 
