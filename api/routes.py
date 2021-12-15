@@ -34,7 +34,7 @@ def before_request_func():
                                  )
                     db.session.add(card)
                     db.session.commit()
-                db.session.close()
+            db.session.close()
 
 
 @app.route("/api/guess", methods=["POST", "GET"], strict_slashes=False)
@@ -48,11 +48,16 @@ def add_card():
         priority = request.json['priority_no']
         answer = request.json['answer']
         word = request.json['word']
+
+        print(f'answer: {answer}')
+
     except Exception as e:
         print(f'Get data from client error: {e}')
 
     if answer:
         # Save answers
+        if answer == 'empty_input':
+            answer = ''
         answers = Answers(word=word, answer=answer)
 
         if word:

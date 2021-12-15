@@ -22,6 +22,9 @@ function Guess() {
   // Handle cards subfunction
   function runFetch(cardNo, answer) {
     // Get data from server
+
+    console.log('fetch 1')
+
     fetch(
       'http://localhost:5000/api/guess',
       {
@@ -136,12 +139,19 @@ function Guess() {
         setMsgColor({color: "#cc5858"});
         setCorrect('Try again!');
 
-        // Send answers to the database
+        let answerInput = input;
+
+        if (input === '') {
+          answerInput = 'empty_input'}
+
+        console.log('input: ', input )
+
+        // Send wrong answer to the database
         fetch(
           'http://localhost:5000/api/guess',
           {
             method: 'POST',
-            body: JSON.stringify({priority_no: cardNo, word: loadedWord, answer: input}),
+            body: JSON.stringify({priority_no: cardNo, word: loadedWord, answer: answerInput}),
             headers: {
               'Content-Type': 'application/json',
             },
